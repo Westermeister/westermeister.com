@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /**
+   * Styling for blog posts in the index.
+   */
+  .blog-post-card {
+    @apply bg-gray-800 rounded-xl p-6 mb-5 transition ease-out duration-500 transform hover:scale-105;
+  }
+  .blog-post-tags {
+    @apply text-cyan-500 font-semibold tracking-wide mb-4;
+  }
+  .blog-post-title {
+    @apply text-gray-300 text-5xl font-semibold mb-4;
+  }
+  .blog-post-date {
+    @apply text-gray-400 font-medium;
+  }
+
+  /**
+   * Styling for emojis that are inline with text.
+   */
+  img.emoji {
+    display: inline;
+    height: 1em;
+    width: 1em;
+    margin: 0 0.05em 0 0.1em;
+    vertical-align: -0.1em;
+  }
+}
