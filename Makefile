@@ -5,6 +5,7 @@ PRETTIER=npx prettier
 
 # Important paths.
 WEBROOT=./frontend
+BLOG_DIR=$(WEBROOT)/blog
 STYLES_DIR=$(WEBROOT)/styles
 
 # Flags.
@@ -18,6 +19,7 @@ all: html prettier styles
 .PHONY: html
 html: prettier
 	$(foreach file, $(wildcard $(WEBROOT)/*.html), $(GZIP) $(GZIP_FLAGS) $(file);)
+	$(foreach file, $(wildcard $(BLOG_DIR)/*.html), $(GZIP) $(GZIP_FLAGS) $(file);)
 
 .PHONY: prettier
 prettier:
