@@ -15,17 +15,45 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-black mt-4 mb-20">
-    <div class="container mx-auto px-4">
-      <header class="mt-20 mb-20">
-        <p class="font-inter text-gray-400 text-lg font-medium mb-1">
-          <strong class="text-cyan-500 text-xl font-bold">Welcome</strong>
+  <body class="bg-gray-900 mt-8 mb-20">
+    <div class="container mx-auto px-4 md:px-8">
+      <header class="mb-12 sm:mb-20">
+        <p class="font-inter text-gray-400 sm:text-lg font-medium mb-1">
+          <strong class="text-cyan-500 text-lg sm:text-xl font-bold"
+            >Welcome</strong
+          >
           to the humble abode of
         </p>
-        <h1 class="font-abrilfatface text-gray-200 text-9xl mb-14">
-          Westermeister
-        </h1>
-        <ul class="font-inter text-gray-400 text-2xl font-medium space-y-2">
+        <a href="/">
+          <h1
+            class="
+              font-abrilfatface
+              text-gray-300 text-5xl
+              sm:text-7xl
+              md:text-8xl
+              mb-10
+              sm:mb-12
+              transition
+              duration-500
+              ease-in-out
+              hover:text-opacity-70
+              active:text-opacity-70
+            "
+          >
+            Westermeister
+          </h1>
+        </a>
+        <ul
+          class="
+            font-inter
+            text-gray-400
+            sm:text-lg
+            md:text-xl
+            font-medium
+            space-y-1
+            sm:space-y-2
+          "
+        >
           <li>
             <img
               src="/images/twemoji/stack-of-books.svg"
@@ -35,8 +63,9 @@
             <strong class="text-gray-300 font-semibold"
               >Full Stack Software Developer</strong
             >
-            based in California, U.S.
+            <span class="hidden sm:inline">based in California, U.S.</span>
           </li>
+          <li class="list-item sm:hidden pl-6">- based in California, U.S.</li>
           <li>
             <img
               src="/images/twemoji/blue-heart.svg"
@@ -51,9 +80,10 @@
               alt="Yellow heart emoji"
               class="emoji"
             />
-            <strong class="text-gray-300 font-semibold">UCLA Alumnus</strong> -
-            Class of 2021, CSE B.S.
+            <strong class="text-gray-300 font-semibold">UCLA Alumnus</strong>
+            <span class="hidden sm:inline">- Class of 2021, CSE B.S.</span>
           </li>
+          <li class="list-item sm:hidden pl-6">- Class of 2021, CSE B.S.</li>
         </ul>
       </header>
       <main class="font-inter">

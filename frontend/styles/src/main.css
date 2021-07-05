@@ -7,13 +7,13 @@
    * Styling for blog posts in the index.
    */
   .blog-post-card {
-    @apply bg-gray-800 rounded-xl p-6 mb-5 transition ease-out duration-500 transform hover:scale-105;
+    @apply bg-gray-800 rounded-xl p-6 mb-5 transition ease-out duration-500 transform hover:scale-105 active:scale-105 max-w-screen-md;
   }
   .blog-post-tags {
-    @apply text-cyan-500 font-semibold tracking-wide mb-4;
+    @apply text-cyan-500 font-semibold tracking-wide mb-2 sm:mb-3;
   }
   .blog-post-title {
-    @apply text-gray-300 text-5xl font-semibold mb-4;
+    @apply text-gray-300 text-3xl md:text-4xl font-bold mb-2 sm:mb-3;
   }
   .blog-post-date {
     @apply text-gray-400 font-medium;
