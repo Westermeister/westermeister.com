@@ -10,13 +10,16 @@
     @apply bg-gray-800 rounded-xl p-6 mb-5 transition ease-out duration-500 transform hover:scale-105 active:scale-105 max-w-screen-md;
   }
   .blog-post-tags {
-    @apply text-cyan-500 font-semibold tracking-wide mb-2 sm:mb-3;
+    @apply text-cyan-500 font-semibold tracking-wide mb-2 sm:mb-3 text-sm sm:text-base flex items-center;
   }
   .blog-post-title {
-    @apply text-gray-300 text-3xl md:text-4xl font-bold mb-2 sm:mb-3;
+    @apply text-gray-300 text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3;
   }
   .blog-post-date {
-    @apply text-gray-400 font-medium;
+    @apply text-gray-400 font-medium text-sm sm:text-base flex items-center;
+  }
+  .blog-post-date svg {
+    margin-left: -0.05rem;
   }
 
   /**
