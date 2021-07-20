@@ -4,25 +4,28 @@
 
 @layer components {
   /**
-   * Styling for blog posts in the index.
+   * Styling for blog posts on the homepage.
    */
-  .blog-post-card {
-    @apply bg-gray-800 rounded-xl p-6 mb-5 transition ease-out duration-500 transform hover:scale-105 active:scale-105 max-w-screen-md;
+  .homepage-blog-post-card-container {
+    @apply w-full md:w-1/2 lg:w-1/3 p-2;
   }
-  .blog-post-tags {
-    @apply text-cyan-500 font-semibold tracking-wide mb-1.5 sm:mb-2 md:mb-3 text-sm md:text-base flex items-center;
+  .homepage-blog-post-card {
+    @apply bg-gray-800 rounded-xl h-60 sm:h-52 md:h-72 lg:h-80 p-4 ease-out duration-500 transform hover:scale-105 active:scale-105;
   }
-  .blog-post-title {
-    @apply text-gray-300 text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-1.5 sm:mb-2 md:mb-3;
+  .homepage-blog-post-card-content {
+    @apply flex flex-col h-full;
   }
-  .blog-post-footer {
-    @apply flex space-x-6;
+  .homepage-blog-post-category {
+    @apply font-semibold tracking-wide mb-1 text-xs sm:text-sm md:text-base;
   }
-  .blog-post-date {
-    @apply text-gray-400 font-medium text-sm md:text-base flex items-center;
+  .homepage-blog-post-title {
+    @apply text-xl sm:text-2xl font-bold text-gray-300;
   }
-  .blog-post-date svg {
-    margin-left: -0.05rem;
+  .homepage-blog-post-dates-container {
+    margin-top: auto;
+  }
+  .homepage-blog-post-date {
+    @apply block text-gray-400 font-medium text-sm md:text-base;
   }
 
   /**
@@ -34,5 +37,26 @@
     width: 1em;
     margin: 0 0.05em 0 0.1em;
     vertical-align: -0.1em;
+  }
+}
+
+/**
+ * A custom breakpoint just for the homepage title, since it's relatively big and hard to make responsive using only
+ * Tailwind's built-in breakpoints. Note that we're not doing defining something like "xs" b/c that can screw up
+ * containers. We also have to manually size it for the sm and md breakpoints b/c the media query messes up the classes.
+ */
+@media (min-width: 375px) {
+  #homepage-title {
+    @apply text-5xl;
+  }
+}
+@media (min-width: 640px) {
+  #homepage-title {
+    @apply text-7xl;
+  }
+}
+@media (min-width: 768px) {
+  #homepage-title {
+    @apply text-8xl;
   }
 }

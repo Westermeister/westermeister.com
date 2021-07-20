@@ -34,18 +34,17 @@
           "
         >
           <strong
-            class="text-cyan-500 text-base sm:text-lg md:text-xl font-bold"
+            class="text-gray-300 text-base sm:text-lg md:text-xl font-bold"
             >Welcome</strong
           >
           to the humble abode of
         </p>
         <a href="/">
           <h1
+            id="homepage-title"
             class="
               font-abrilfatface
               text-gray-300 text-4xl
-              sm:text-7xl
-              md:text-8xl
               mb-8
               sm:mb-10
               md:mb-12
@@ -106,59 +105,33 @@
           </li>
         </ul>
       </header>
-      <main class="font-inter">
-        <a href="#">
-          <article class="blog-post-card">
-            <p class="blog-post-tags">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span>&nbsp;INSERT TAG HERE</span>
-            </p>
-            <h2 class="blog-post-title">Insert Title Here</h2>
-            <footer class="blog-post-footer">
-              <time class="blog-post-date" datetime="1970-01-01">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span>&nbsp;Jan 10, 1970</span>
-              </time>
-              <time class="blog-post-date" datetime="1970-12-25">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span>&nbsp;Dec 25, 1970</span>
-              </time>
-            </footer>
-          </article>
-        </a>
+      <main class="font-inter -mx-2">
+        <div class="flex flex-wrap">
+          <!-- BEGIN Article -->
+          <div class="homepage-blog-post-card-container">
+            <a href="#">
+              <article class="homepage-blog-post-card">
+                <div class="homepage-blog-post-card-content">
+                  <header>
+                    <p class="homepage-blog-post-category text-cyan-500">
+                      INSERT CATEGORY
+                    </p>
+                    <h2 class="homepage-blog-post-title">Insert Title</h2>
+                  </header>
+                  <footer class="homepage-blog-post-dates-container">
+                    <time class="homepage-blog-post-date" datetime="1970-01-01"
+                      >Published on January 1, 1970</time
+                    >
+                    <time class="homepage-blog-post-date" datetime="1971-01-01"
+                      >Updated on January 1, 1971</time
+                    >
+                  </footer>
+                </div>
+              </article>
+            </a>
+          </div>
+          <!-- END Article -->
+        </div>
       </main>
     </div>
   </body>
