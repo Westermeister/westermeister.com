@@ -64,6 +64,15 @@
   .blog-post-generic-link {
     @apply text-cyan-500 underline;
   }
+  .blog-post-footer {
+    @apply max-w-screen-lg mx-auto px-4 mt-20;
+  }
+  .blog-post-copyright-notice {
+    @apply font-lora text-gray-400 italic;
+  }
+  .blog-post-license-link {
+    @apply underline;
+  }
 
   /** Styling for emojis that are inline with text. */
   img.emoji {
