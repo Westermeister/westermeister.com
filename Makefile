@@ -1,32 +1,40 @@
-# Command variables.
-GZIP=gzip
-POSTCSS=NODE_ENV=production npx postcss
-PRETTIER=npx prettier
-
 # Important paths.
-WEBROOT=./frontend
-BLOG_DIR=$(WEBROOT)/blog
-STYLES_DIR=$(WEBROOT)/styles
-
-# Flags.
-GZIP_FLAGS=-9 --keep --force
-POSTCSS_FLAGS=-o $(STYLES_DIR)/dist/main.css
-PRETTIER_FLAGS=--write "$(WEBROOT)/**/*.html" "$(STYLES_DIR)/src/**/*.css"
+FRONTEND_SRC=./frontend/src
+FRONTEND_DIST=./frontend/dist
 
 .PHONY: all
-all: html prettier styles
+all: dist html images misc prettier styles
+
+.PHONY: clean
+clean:
+	rm -rf $(FRONTEND_DIST)
+
+.PHONY: dist
+dist:
+	mkdir -p $(FRONTEND_DIST)
+	mkdir -p $(FRONTEND_DIST)/assets
+	mkdir -p $(FRONTEND_DIST)/assets/images
+	mkdir -p $(FRONTEND_DIST)/assets/styles
+	mkdir -p $(FRONTEND_DIST)/blog
 
 .PHONY: html
-html: prettier
-	$(foreach file, $(wildcard $(WEBROOT)/*.html), $(GZIP) $(GZIP_FLAGS) $(file);)
-	$(foreach file, $(wildcard $(BLOG_DIR)/*.html), $(GZIP) $(GZIP_FLAGS) $(file);)
+html: dist prettier
+	cp $(FRONTEND_SRC)/*.html $(FRONTEND_DIST)
+	cp $(FRONTEND_SRC)/blog/*.html $(FRONTEND_DIST)/blog
+
+.PHONY: images
+images: dist
+	# Trailing "/." means to copy over CONTENTS of folder, not folder itself.
+	cp -r $(FRONTEND_SRC)/assets/images/. $(FRONTEND_DIST)/assets/images
+
+.PHONY: misc
+misc:
+	cp $(FRONTEND_SRC)/robots.txt $(FRONTEND_SRC)/sitemap.xml $(FRONTEND_DIST)
 
 .PHONY: prettier
 prettier:
-	$(PRETTIER) $(PRETTIER_FLAGS)
+	npx prettier --write "$(FRONTEND_SRC)/**/*.html" "$(FRONTEND_SRC)/assets/styles/**/*.css"
 
 .PHONY: styles
-styles: prettier
-	rm -rf $(STYLES_DIR)/dist
-	$(POSTCSS) $(STYLES_DIR)/src/main.css $(POSTCSS_FLAGS)
-	$(GZIP) $(GZIP_FLAGS) $(STYLES_DIR)/dist/main.css
+styles: dist prettier
+	NODE_ENV=production npx postcss $(FRONTEND_SRC)/assets/styles/main.css -o $(FRONTEND_DIST)/assets/styles/main.css
