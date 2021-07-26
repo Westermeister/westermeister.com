@@ -28,7 +28,7 @@
 
   /** Styling for individual blog post elements. */
   #blog-post-body {
-    @apply bg-gray-900 pb-12;
+    @apply bg-gray-900;
   }
   #blog-post-header {
     @apply h-screen flex items-center justify-center mb-20;
@@ -65,10 +65,10 @@
     @apply text-gray-400 italic mb-12;
   }
   #blog-post-footer {
-    @apply max-w-screen-md mx-auto px-4 sm:px-10 md:px-16;
+    @apply py-4 bg-black w-full;
   }
   #blog-post-copyright-notice {
-    @apply font-lora text-gray-400 italic;
+    @apply max-w-screen-md mx-auto px-4 sm:px-10 md:px-16 font-lora text-gray-400 italic;
   }
   #blog-post-license-link {
     @apply underline hover:no-underline active:no-underline;
