@@ -26,52 +26,74 @@
     @apply block text-gray-400 font-medium text-sm md:text-base;
   }
 
-  /** Common styles within blog posts. */
-  .blog-post-body {
-    @apply bg-gray-900 pb-20;
+  /** Styling for individual blog post elements. */
+  #blog-post-body {
+    @apply bg-gray-900 pb-12;
   }
-  .blog-post-header {
+  #blog-post-header {
     @apply h-screen flex items-center justify-center mb-20;
   }
-  .blog-post-homepage-logo-link {
+  #blog-post-homepage-logo-link {
     @apply absolute top-4 left-4 w-14 h-14 border-2 border-gray-300 border-opacity-50 rounded-lg opacity-50 transition duration-500 ease-in-out hover:opacity-100 hover:border-opacity-100 active:opacity-100 active:border-opacity-100;
   }
-  .blog-post-cover-picture {
+  #blog-post-cover-credit {
+    @apply font-lora p-1 text-xs sm:text-sm md:text-base text-gray-300 absolute top-4 right-2 border-2 border-gray-300 border-opacity-50 rounded-lg opacity-50 transition duration-500 ease-in-out hover:opacity-100 hover:border-opacity-100 active:opacity-100 active:border-opacity-100;
+  }
+  #blog-post-cover-credit > a {
+    @apply underline hover:no-underline active:no-underline;
+  }
+  #blog-post-cover {
     @apply absolute inset-0 w-full h-full opacity-50;
     z-index: -1;
   }
-  .blog-post-title-container {
+  #blog-post-title-container {
     @apply max-w-screen-lg mx-auto px-4;
   }
-  .blog-post-title {
-    @apply font-inter text-gray-200 text-2xl sm:text-3xl md:text-4xl font-bold mb-16 bg-gray-900 rounded-xl p-4 border-2 border-gray-300;
+  #blog-post-title {
+    @apply font-inter text-gray-200 text-2xl sm:text-3xl md:text-4xl font-semibold mb-16 bg-gray-900 rounded-xl p-4 border-2 border-gray-300;
   }
-  .blog-post-scroll-indicator-container {
+  #blog-post-scroll-indicator-container {
     @apply absolute inset-x-0 bottom-8 flex justify-center;
   }
-  .blog-post-scroll-indicator {
+  #blog-post-scroll-indicator {
     @apply h-8 w-8 animate-bounce;
   }
-  .blog-post-content-container {
-    @apply max-w-screen-lg mx-auto px-4 font-lora text-base sm:text-lg md:text-xl text-gray-300;
+  #blog-post-content-container {
+    @apply mb-24 max-w-screen-md mx-auto px-4 sm:px-10 md:px-16 font-lora text-base sm:text-lg md:text-xl text-gray-300;
   }
-  .blog-post-metadata-container {
+  #blog-post-metadata-container {
     @apply text-gray-400 italic mb-12;
   }
-  .blog-post-author {
-    @apply underline;
+  #blog-post-footer {
+    @apply max-w-screen-md mx-auto px-4 sm:px-10 md:px-16;
   }
-  .blog-post-generic-link {
-    @apply text-cyan-500 underline;
-  }
-  .blog-post-footer {
-    @apply max-w-screen-lg mx-auto px-4 mt-20;
-  }
-  .blog-post-copyright-notice {
+  #blog-post-copyright-notice {
     @apply font-lora text-gray-400 italic;
   }
-  .blog-post-license-link {
-    @apply underline;
+  #blog-post-license-link {
+    @apply underline hover:no-underline active:no-underline;
+  }
+
+  /** Styling for common blog post markup. */
+  #blog-post-content-container p {
+    @apply mb-4;
+  }
+  #blog-post-content-container strong {
+    @apply font-bold italic;
+  }
+  #blog-post-content-container a {
+    @apply italic text-cyan-500 underline hover:no-underline active:no-underline;
+  }
+  #blog-post-content-container ol {
+    @apply mb-4 ml-6 list-decimal;
+  }
+  #blog-post-content-container ul {
+    @apply mb-4 ml-6 list-disc;
+  }
+
+  /** A little hack to override the cyan anchor styling above, just for the author link. */
+  #blog-post-metadata-container > address > a {
+    @apply text-gray-400 underline;
   }
 
   /** Styling for emojis that are inline with text. */
