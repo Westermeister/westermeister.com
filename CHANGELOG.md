@@ -1,3 +1,6 @@
+# 2021.07.31.1
+- Added copyright notices (as comments) to homepage and main stylesheet.
+
 # 2021.07.31
 - Modified styling of cover picture's credit line for blog posts. No longer has a border, nor any opacity animations.
   - This change makes the credit line look more minimalistic and clean.
