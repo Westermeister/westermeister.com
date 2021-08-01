@@ -1,3 +1,9 @@
+# 2021.08.01.4
+- Update styling of copyright notices.
+  - In blog post "Are Software Engineers Really Engineers?", footer now uses &copy; instead of `(C)`.
+  - In homepage and in main stylesheet, `(C)` is replaced by `(c)` as the latter is explicitly approved by the [U.S.
+    Copyright Office](https://www.copyright.gov/comp3/).
+
 # 2021.08.01.3
 - Minor content adjustments to blog post: "Are Software Engineers Really Engineers?"
 
