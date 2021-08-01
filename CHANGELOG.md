@@ -1,3 +1,10 @@
+# 2021.08.01
+- Major rewrite of blog post: *Are Software Engineers Really Engineers?*
+  - The updated post, unlike the original, is not licensed under [CC BY-SA
+    4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Changed styling of footer for blog posts: the copyright notice is now centered instead of being left-aligned with the
+  blog post's text.
+
 # 2021.07.31.1
 - Added copyright notices (as comments) to homepage and main stylesheet.
 
