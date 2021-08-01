@@ -1,5 +1,10 @@
+# 2021.08.01.1
+- Changes to blog post: "Are Software Engineers Really Engineers?"
+  - Fixed bug where the "Updated on" datetime doesn't appear on its own line.
+  - Modified footer to contain a `div` tag instead of a `p` tag to avoid misleading semantics.
+
 # 2021.08.01
-- Major rewrite of blog post: *Are Software Engineers Really Engineers?*
+- Major rewrite of blog post: "Are Software Engineers Really Engineers?"
   - The updated post, unlike the original, is not licensed under [CC BY-SA
     4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 - Changed styling of footer for blog posts: the copyright notice is now centered instead of being left-aligned with the
@@ -19,4 +24,4 @@
     caution.
 
 # 2021.07.26
-- Initial deploy with basic homepage and first post.
+- Initial deploy with basic homepage and first blog post: "Are Software Engineers Really Engineers?"
