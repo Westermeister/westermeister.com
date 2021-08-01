@@ -1,3 +1,6 @@
+# 2021.08.01.2
+- Fix minor typo in blog post: "Are Software Engineers Really Engineers?"
+
 # 2021.08.01.1
 - Changes to blog post: "Are Software Engineers Really Engineers?"
   - Fixed bug where the "Updated on" datetime doesn't appear on its own line.
