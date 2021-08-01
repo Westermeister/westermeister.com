@@ -67,10 +67,10 @@
     @apply text-gray-400 italic mb-12;
   }
   #blog-post-footer {
-    @apply py-4 bg-black w-full;
+    @apply p-4 bg-black w-full;
   }
   #blog-post-copyright-notice {
-    @apply max-w-screen-md mx-auto px-4 sm:px-10 md:px-16 font-lora text-gray-400 italic;
+    @apply flex justify-center text-xs sm:text-base font-lora text-gray-400 italic;
   }
   #blog-post-license-link {
     @apply underline hover:no-underline active:no-underline;
