@@ -1,3 +1,6 @@
+# 2021.08.01.3
+- Minor content adjustments to blog post: "Are Software Engineers Really Engineers?"
+
 # 2021.08.01.2
 - Fix minor typo in blog post: "Are Software Engineers Really Engineers?"
 
