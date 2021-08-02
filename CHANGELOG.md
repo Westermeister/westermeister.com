@@ -1,3 +1,8 @@
+# 2021.08.01.5
+- Modify homepage blog post card for: "Are Software Engineers Really Engineers?"
+  - Fix incorrect datetime attribute for publishing date.
+  - Add missing "Updated on" date.
+
 # 2021.08.01.4
 - Update styling of copyright notices.
   - In blog post "Are Software Engineers Really Engineers?", footer now uses &copy; instead of `(C)`.
