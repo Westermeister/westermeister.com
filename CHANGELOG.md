@@ -1,3 +1,7 @@
+# 2021.08.10
+- Modify cover photo link for blog post: "Are Software Engineers Really Engineers?"
+  - Now it's a referral link rather than a generic one.
+
 # 2021.08.01.5
 - Modify homepage blog post card for: "Are Software Engineers Really Engineers?"
   - Fix incorrect datetime attribute for publishing date.
