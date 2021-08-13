@@ -1,3 +1,8 @@
+# 2021.08.12
+- Modified cover photo for blog post: "Are Software Engineers Really Engineers?"
+  - Downscaled for smaller size and better transfer performance.
+  - Added `alt` tag for accessibility.
+
 # 2021.08.10
 - Modify cover photo link for blog post: "Are Software Engineers Really Engineers?"
   - Now it's a referral link rather than a generic one.
