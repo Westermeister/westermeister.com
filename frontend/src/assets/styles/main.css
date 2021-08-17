@@ -61,7 +61,7 @@
     @apply h-8 w-8 animate-bounce;
   }
   #blog-post-content-container {
-    @apply mb-24 max-w-screen-md mx-auto px-4 sm:px-10 md:px-16 font-lora text-base sm:text-lg md:text-xl text-gray-300;
+    @apply mb-24 max-w-screen-md mx-auto px-4 sm:px-10 md:px-16 font-lora text-base sm:text-lg text-gray-300;
   }
   #blog-post-metadata-container {
     @apply text-gray-400 italic mb-12;
@@ -87,10 +87,13 @@
     @apply italic text-cyan-500 underline hover:no-underline active:no-underline;
   }
   #blog-post-content-container ol {
-    @apply mb-4 ml-6 list-decimal;
+    @apply mb-4 list-decimal list-inside;
   }
   #blog-post-content-container ul {
-    @apply mb-4 ml-6 list-disc;
+    @apply mb-4 list-disc list-inside;
+  }
+  #blog-post-content-container li {
+    @apply mb-4;
   }
 
   /** A little hack to override the cyan anchor styling above, just for the author link. */

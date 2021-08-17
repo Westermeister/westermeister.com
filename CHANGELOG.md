@@ -1,3 +1,9 @@
+# 2021.08.16
+- Downscaled blog posts' maximum font scaling from `text-xl` to `text-lg` i.e. `1.25rem` to `1.125rem`.
+- Changed styling of blog posts' lists to be like normal paragraphs. Specifically:
+  - Margins are now flush with paragraphs. This includes the bullet/numerical markers.
+  - No more left-indent from the second line onwards.
+
 # 2021.08.12
 - Modified cover photo for blog post: "Are Software Engineers Really Engineers?"
   - Downscaled for smaller size and better transfer performance.
