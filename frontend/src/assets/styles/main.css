@@ -38,13 +38,13 @@
   #blog-post-homepage-logo-link {
     @apply absolute top-4 left-4 w-14 h-14 border-2 border-gray-300 border-opacity-50 rounded-lg opacity-50 transition duration-500 ease-in-out hover:opacity-100 hover:border-opacity-100 active:opacity-100 active:border-opacity-100;
   }
-  #blog-post-cover-credit {
+  #blog-post-hero-image-credit {
     @apply font-lora p-1 text-xs sm:text-sm md:text-base text-gray-300 absolute top-4 right-2 rounded-lg opacity-50;
   }
-  #blog-post-cover-credit > a {
+  #blog-post-hero-image-credit > a {
     @apply underline hover:no-underline active:no-underline;
   }
-  #blog-post-cover {
+  #blog-post-hero-image {
     @apply absolute inset-0 w-full h-full opacity-50;
     z-index: -1;
   }
@@ -94,6 +94,9 @@
   }
   #blog-post-content-container li {
     @apply mb-4;
+  }
+  #blog-post-content-container h2 {
+    @apply font-inter text-xl sm:text-2xl md:text-3xl font-semibold my-8;
   }
 
   /** A little hack to override the cyan anchor styling above, just for the author link. */
