@@ -1,3 +1,9 @@
+# 2021.09.14
+
+- Updated post: "Kenny or Jane?"
+  - Made minor adjustments to content.
+  - Fixed a typo.
+
 # 2021.09.13
 
 - Change directory structure from `frontend/src` to `src/frontend`.
