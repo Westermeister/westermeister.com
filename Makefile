@@ -1,13 +1,13 @@
 # Important paths.
-FRONTEND_SRC=./frontend/src
-FRONTEND_DIST=./frontend/dist
+FRONTEND_SRC=./src/frontend
+FRONTEND_DIST=./dist/frontend
 
 .PHONY: all
 all: dist html images misc prettier styles
 
 .PHONY: clean
 clean:
-	rm -rf $(FRONTEND_DIST)
+	rm -rf ./dist
 
 .PHONY: dist
 dist:

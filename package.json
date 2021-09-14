@@ -1,10 +1,11 @@
 {
-  "name": "westermeister.com",
-  "version": "1.0.0",
-  "private": true,
+  "scripts": {
+    "start": "npx http-server ./dist/frontend -s -e -p 8080"
+  },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
     "cssnano": "^5.0.5",
+    "eslint-config-prettier": "8.3.0",
     "http-server": "^0.12.3",
     "postcss": "^8.3.0",
     "postcss-cli": "^8.3.1",
