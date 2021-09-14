@@ -1,20 +1,18 @@
-const colors = require('tailwindcss/colors');
+const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: [
-    './frontend/**/*.html'
-  ],
+  purge: ["./src/frontend/**/*.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
     fontFamily: {
-      'abrilfatface': ['Abril Fatface', 'cursive'],
-      'inter': ['Inter', 'sans-serif'],
-      'lora': ['Lora', 'serif'],
+      abrilfatface: ["Abril Fatface", "cursive"],
+      inter: ["Inter", "sans-serif"],
+      lora: ["Lora", "serif"],
     },
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
+      transparent: "transparent",
+      current: "currentColor",
       black: colors.black,
       white: colors.white,
       gray: colors.trueGray,
@@ -34,17 +32,17 @@ module.exports = {
       purple: colors.purple,
       fuchsia: colors.fuchsia,
       pink: colors.pink,
-      rose: colors.rose
-    }
+      rose: colors.rose,
+    },
   },
   variants: {
     extend: {
-      scale: ['active'],
-      textOpacity: ['active'],
-      opacity: ['active'],
-      borderOpacity: ['active'],
-      textDecoration: ['active'],
-    }
+      scale: ["active"],
+      textOpacity: ["active"],
+      opacity: ["active"],
+      borderOpacity: ["active"],
+      textDecoration: ["active"],
+    },
   },
-  plugins: []
-}
+  plugins: [],
+};
