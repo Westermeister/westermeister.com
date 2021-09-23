@@ -1,3 +1,7 @@
+# 2021.09.22
+
+- Fix missing newline in "Kenny or Jane?" blog post by the datetime metadata.
+
 # 2021.09.14
 
 - Updated post: "Kenny or Jane?"
