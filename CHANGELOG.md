@@ -1,6 +1,8 @@
 # 2021.09.22
 
-- Fix missing newline in "Kenny or Jane?" blog post by the datetime metadata.
+- Modified miscellaneous content in blog post: "Kenny or Jane?"
+  - Fixed missing newline in "Kenny or Jane?" blog post by the datetime metadata.
+  - Changed hero image's credit to link to the game series as a whole instead of the individual game.
 
 # 2021.09.14
 
