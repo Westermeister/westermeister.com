@@ -1,3 +1,9 @@
+# 2021.09.27.1
+
+- Modified blog post: "My Website Was Stolen"
+  - Blackened out an extra piece of information in the second screenshot.
+  - Added quotes around phrase "name-and-shame".
+
 # 2021.09.27
 
 - Added new post: "My Website Was Stolen"
