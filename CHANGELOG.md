@@ -1,3 +1,9 @@
+# 2021.09.28
+
+- Reworded a few sentences for clarity in blog post: "My Website Was Stolen"
+- Removed "updated" date for blog post: "Kenny or Jane?"
+  - The changes made came only a day after publishing, and they were trivial.
+
 # 2021.09.27.1
 
 - Modified blog post: "My Website Was Stolen"
