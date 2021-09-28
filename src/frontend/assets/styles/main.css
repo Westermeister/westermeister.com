@@ -102,6 +102,13 @@
   #blog-post-content-container blockquote {
     @apply text-gray-400 italic my-8 border-l-2 pl-4 border-gray-400;
   }
+  #blog-post-content-container figure {
+    @apply my-12;
+  }
+  #blog-post-content-container figure > figcaption,
+  #blog-post-content-container figure > figcaption > a {
+    @apply mt-2 text-gray-400 text-center font-inter font-normal text-sm italic;
+  }
 
   /** A little hack to override the cyan anchor styling above, just for the author link. */
   #blog-post-metadata-container > address > a {
