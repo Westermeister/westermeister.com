@@ -1,3 +1,10 @@
+# 2021.09.27
+
+- Added new post: "My Website Was Stolen"
+- Added styling for images and captions for blog posts.
+- Fixed outdated alt description for hero image of blog post: "Kenny or Jane?"
+- Shortened hero image credit link for blog post: "Are Software Engineers Really Engineers?"
+
 # 2021.09.22
 
 - Modified miscellaneous content in blog post: "Kenny or Jane?"
