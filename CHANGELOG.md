@@ -1,3 +1,7 @@
+# 2021.11.20
+
+- Added a simple explanation of the repository's structure to `README.md`.
+
 # 2021.09.28
 
 - Reworded a few sentences for clarity in blog post: "My Website Was Stolen"
