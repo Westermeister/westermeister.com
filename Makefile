@@ -35,7 +35,7 @@ misc:
 .PHONY: prettier
 prettier:
 	npx prettier --write "$(FRONTEND_SRC)/**/*.html" "$(FRONTEND_SRC)/assets/styles/**/*.css" \
-	"$(FRONTEND_SRC)/assets/scripts/**/*.vue"
+	"$(FRONTEND_SRC)/assets/scripts/**/*.vue" "*.config.js"
 
 .PHONY: styles
 styles: dist prettier
