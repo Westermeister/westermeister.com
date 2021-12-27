@@ -111,89 +111,15 @@
         </ul>
       </header>
       <main class="font-inter -mx-3">
-        <div class="flex flex-wrap">
-          <article class="homepage-blog-post-card-container">
-            <a href="/blog/my-website-was-stolen">
-              <div class="homepage-blog-post-card">
-                <div class="homepage-blog-post-card-content">
-                  <header>
-                    <p class="homepage-blog-post-category text-cyan-500">
-                      DEV JOURNAL
-                    </p>
-                    <h2 class="homepage-blog-post-title">
-                      My Website Was Stolen
-                    </h2>
-                  </header>
-                  <footer class="homepage-blog-post-dates-container">
-                    <div>
-                      <time
-                        class="homepage-blog-post-date"
-                        datetime="2021-09-27"
-                        >Published on September 27, 2021</time
-                      >
-                    </div>
-                  </footer>
-                </div>
-              </div>
-            </a>
-          </article>
-          <article class="homepage-blog-post-card-container">
-            <a href="/blog/kenny-or-jane">
-              <div class="homepage-blog-post-card">
-                <div class="homepage-blog-post-card-content">
-                  <header>
-                    <p class="homepage-blog-post-category text-purple-500">
-                      GAMING
-                    </p>
-                    <h2 class="homepage-blog-post-title">Kenny or Jane?</h2>
-                  </header>
-                  <footer class="homepage-blog-post-dates-container">
-                    <div>
-                      <time
-                        class="homepage-blog-post-date"
-                        datetime="2021-09-13"
-                        >Published on September 13, 2021</time
-                      >
-                    </div>
-                  </footer>
-                </div>
-              </div>
-            </a>
-          </article>
-          <article class="homepage-blog-post-card-container">
-            <a href="/blog/are-software-engineers-really-engineers">
-              <div class="homepage-blog-post-card">
-                <div class="homepage-blog-post-card-content">
-                  <header>
-                    <p class="homepage-blog-post-category text-cyan-500">
-                      DEV JOURNAL
-                    </p>
-                    <h2 class="homepage-blog-post-title">
-                      Are Software Engineers Really Engineers?
-                    </h2>
-                  </header>
-                  <footer class="homepage-blog-post-dates-container">
-                    <div>
-                      <time
-                        class="homepage-blog-post-date"
-                        datetime="2021-07-26"
-                        >Published on July 26, 2021</time
-                      >
-                    </div>
-                    <div>
-                      <time
-                        class="homepage-blog-post-date"
-                        datetime="2021-09-13"
-                        >Updated on September 13, 2021</time
-                      >
-                    </div>
-                  </footer>
-                </div>
-              </div>
-            </a>
-          </article>
-        </div>
+        <div id="card-list" class="flex flex-wrap"></div>
       </main>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/vue@3.2.26/dist/vue.runtime.global.prod.js"
+      integrity="sha256-qEAgwKeDk/09x8JdbmigAxPXjA7HPzYp73zRHFNx8fw="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/assets/scripts/home/CardList.js"></script>
   </body>
 </html>

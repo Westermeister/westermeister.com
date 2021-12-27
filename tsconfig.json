@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/frontend/assets/scripts",
+    "module": "ES2015",
+    "target": "ES2017",
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "moduleResolution": "Node"
+  },
+  "include": ["src/frontend/assets/scripts/**/*"]
+}

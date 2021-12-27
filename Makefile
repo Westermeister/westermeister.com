@@ -3,7 +3,7 @@ FRONTEND_SRC=./src/frontend
 FRONTEND_DIST=./dist/frontend
 
 .PHONY: all
-all: dist html images misc prettier styles
+all: dist html images misc prettier styles scripts
 
 .PHONY: clean
 clean:
@@ -15,6 +15,7 @@ dist:
 	mkdir -p $(FRONTEND_DIST)/assets
 	mkdir -p $(FRONTEND_DIST)/assets/images
 	mkdir -p $(FRONTEND_DIST)/assets/styles
+	mkdir -p $(FRONTEND_DIST)/assets/scripts
 	mkdir -p $(FRONTEND_DIST)/blog
 
 .PHONY: html
@@ -33,8 +34,13 @@ misc:
 
 .PHONY: prettier
 prettier:
-	npx prettier --write "$(FRONTEND_SRC)/**/*.html" "$(FRONTEND_SRC)/assets/styles/**/*.css"
+	npx prettier --write "$(FRONTEND_SRC)/**/*.html" "$(FRONTEND_SRC)/assets/styles/**/*.css" \
+	"$(FRONTEND_SRC)/assets/scripts/**/*.vue"
 
 .PHONY: styles
 styles: dist prettier
 	NODE_ENV=production npx postcss $(FRONTEND_SRC)/assets/styles/main.css -o $(FRONTEND_DIST)/assets/styles/main.css
+
+.PHONY: scripts
+scripts: dist prettier
+	npx webpack --config ./webpack.config.js
