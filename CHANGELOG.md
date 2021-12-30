@@ -1,3 +1,9 @@
+# 2021.12.30
+
+- Added Vue templating to the homepage's grid of cards.
+  - Also added relevant tooling e.g. TypeScript, Webpack, etc.
+- Added an HTML template for new blog posts.
+
 # 2021.11.20
 
 - Added a simple explanation of the repository's structure to `README.md`.
