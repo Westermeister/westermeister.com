@@ -1,3 +1,7 @@
+# 2022.03.17.1
+
+- Slightly darkened the whiteness of blog posts' titles and body text.
+
 # 2022.03.17
 
 - Removed the phrase "all rights reserved" from all copyright notices on blog posts, including template post.
