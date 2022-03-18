@@ -9,9 +9,17 @@
   For instance, if a blog post (of ID "1") has several images, then those images are in "/assets/images/blog/1/".
   In essence, the IDs are only for documentation purposes.
 
-  Copyright (c) 2021 Westermeister. All rights reserved.
+  Copyright (c) 2021 - 2022 Westermeister
 -->
 <template>
+  <Card
+    postId="4"
+    rootRelativeUrl="/blog/my-love-hate-relationship-with-dead-by-daylight"
+    topic="GAMING"
+    topicColor="purple"
+    title="My Love-Hate Relationship with Dead by Daylight"
+    publishedIsoFormat="2022-03-17"
+  />
   <Card
     postId="3"
     rootRelativeUrl="/blog/my-website-was-stolen"
