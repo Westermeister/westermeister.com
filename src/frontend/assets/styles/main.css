@@ -52,7 +52,7 @@
     @apply max-w-screen-lg mx-auto px-4;
   }
   #blog-post-title {
-    @apply font-inter text-gray-200 text-2xl sm:text-3xl md:text-4xl font-semibold mb-16 bg-gray-900 rounded-xl p-4 border-2 border-gray-300;
+    @apply font-inter text-gray-300 text-2xl sm:text-3xl md:text-4xl font-semibold mb-16 bg-gray-900 rounded-xl p-4 border-2 border-gray-300;
   }
   #blog-post-scroll-indicator-container {
     @apply absolute inset-x-0 bottom-8 flex justify-center;
@@ -61,7 +61,8 @@
     @apply h-8 w-8 animate-bounce;
   }
   #blog-post-content-container {
-    @apply mb-24 max-w-screen-md mx-auto px-4 sm:px-10 md:px-16 font-lora text-base sm:text-lg text-gray-300;
+    @apply mb-24 max-w-screen-md mx-auto px-4 sm:px-10 md:px-16 font-lora text-base sm:text-lg;
+    color: rgb(190, 190, 190);
   }
   #blog-post-metadata-container {
     @apply text-gray-400 italic mb-12;
