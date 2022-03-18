@@ -1,3 +1,8 @@
+# 2022.03.17
+
+- Removed the phrase "all rights reserved" from all copyright notices on blog posts, including template post.
+- Added new blog post: "My Love-Hate Relationship with Dead by Daylight"
+
 # 2021.12.30
 
 - Added Vue templating to the homepage's grid of cards.
